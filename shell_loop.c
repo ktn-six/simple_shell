@@ -104,7 +104,8 @@ void fork_cmd(info_t *info)
 	child_pid = fork();
 	if (child_pid == -1)
 	{
-				perror("Error:");
+		/* TODO: PUT ERROR FUNCTION */
+		perror("Error:");
 		return;
 	}
 	if (child_pid == 0)
@@ -116,7 +117,7 @@ void fork_cmd(info_t *info)
 				exit(126);
 			exit(1);
 		}
-		
+		/* TODO: PUT ERROR FUNCTION */
 	}
 	else
 	{
